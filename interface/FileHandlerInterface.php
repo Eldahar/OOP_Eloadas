@@ -19,12 +19,4 @@ interface FileHandlerInterface {
      * Lezárja a file -t
      */
     public function closeFile();
-
-    /**
-     * Egy sort olvas
-     *
-     * @return string
-     */
-    public function getLine();
-
 }

@@ -5,7 +5,7 @@ namespace pelda2;
 /**
  * Fileokat kezelő osztály
  */
-class FileHandler implements FileHandlerInterface {
+class FileHandler implements FileHandlerInterface, FileReaderInterface {
     /**
      * Az olvasás típusa
      */
