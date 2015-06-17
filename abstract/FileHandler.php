@@ -14,7 +14,7 @@ class FileHandler extends AbstractDataHandler {
     /**
      * {@inheritdoc}
      */
-    protected function loadFile() {
+    protected function loadFrom() {
         # olvasási művelet
     }
 

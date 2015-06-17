@@ -40,7 +40,7 @@ abstract class AbstractDataHandler {
     }
 
     public function load() {
-        $this->data = $this->loadFile();
+        $this->data = $this->loadFrom();
     }
 
     /**
@@ -55,5 +55,5 @@ abstract class AbstractDataHandler {
      *
      * @return array
      */
-    abstract protected function loadFile();
+    abstract protected function loadFrom();
 }
