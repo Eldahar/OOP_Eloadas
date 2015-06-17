@@ -42,6 +42,10 @@ echo $normal->a4->teszt; //2
 $clone = clone $normal;
 echo $clone->a4->teszt; //1
 
+/**
+ * Nem ugyanaz az objektum, mert a __clone
+ * metódussal új példányt hoztunk létre
+ */
 if($normal->a4 === $clone->a4) {
     echo 'OK'; // nem megy bele
 }

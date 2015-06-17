@@ -5,6 +5,8 @@
  */
 class tesztGenerator {
     /**
+     * Sima számokat ad vissza 0 - 9
+     *
      * @return Generator
      */
     public function szamGenerator() {
@@ -14,6 +16,8 @@ class tesztGenerator {
     }
 
     /**
+     * Tömb formátumban adja a számokat
+     *
      * @return Generator
      */
     public function arrayGenerator() {

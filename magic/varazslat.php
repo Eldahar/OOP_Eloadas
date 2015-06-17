@@ -6,13 +6,15 @@
  */
 class varazslat {
     /**
-     * 
+     * Konstruktor
      */
     public function __construct() {
         echo 'konstruktor';
     }
 
     /**
+     * String cast esetén
+     *
      * @return string
      */
     public function __toString() {
@@ -20,6 +22,8 @@ class varazslat {
     }
 
     /**
+     * Nem létező metódushívás esetén
+     *
      * @param string $name
      * @param array $arguments
      */
@@ -28,6 +32,8 @@ class varazslat {
     }
 
     /**
+     * Nem létező tulajdonság olvasása esetén
+     *
      * @param string $name
      * @return int
      */
@@ -36,6 +42,8 @@ class varazslat {
     }
 
     /**
+     * Nem létező tulajdonság írása esetén
+     *
      * @param $name
      * @param $value
      */

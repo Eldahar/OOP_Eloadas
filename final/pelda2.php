@@ -19,5 +19,10 @@ class B extends A {
     }
 }
 
-$c = new B(); // FATAL error
+/**
+ * Az osztályt simán származtatod, de a teszt1
+ * metódust nem tudod túlterhelni, mert final az
+ * ősoztályban
+ */
+$c = new B();
 $c->teszt1();

@@ -35,6 +35,9 @@ echo $normal->a4->teszt; //2
 $clone = clone $normal;
 echo $clone->a4->teszt; //2
 
+/**
+ * Ugyanaz az objektum van benne, abból nem klónozott
+ */
 if($normal->a4 === $clone->a4) {
     echo 'OK'; // OK
 }

@@ -7,6 +7,7 @@
 class A {
     protected function teszt1() {
         echo 'teszt1';
+        $this->teszt2();
     }
 
     protected function teszt2() {
@@ -20,9 +21,12 @@ class A {
 class B extends A {
     public function teszt1() {
         parent::teszt1();
-        $this->teszt2();
    }
+
+    protected function teszt2() {
+        echo 'teszt4';
+    }
 }
 
 $b = new B();
-$b->teszt1(); //teszt1 és teszt3
+$b->teszt1(); //teszt1 és teszt4
